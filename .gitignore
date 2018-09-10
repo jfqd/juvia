@@ -1,9 +1,16 @@
 .bundle
+.gitignore
+.rspec
+.rvmrc
+.env*
 .DS_Store
 config/*.yml
+config/deploy.rb
 db/*.sqlite3*
 log/*.log
 tmp/restart.txt
 tmp/**/*
 .sass-cache
 public/_test.html
+public/assets/
+help
