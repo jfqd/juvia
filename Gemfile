@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '4.2.0'
+gem 'rails', '~> 4.2.10'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -8,13 +8,16 @@ gem 'rails', '4.2.0'
 gem 'schema_plus'
 gem 'default_value_for'
 gem 'bluecloth'
+gem 'rails-i18n'
 gem 'devise'
+gem 'devise-i18n'
 gem 'jquery-rails'
 gem 'will_paginate'
 gem 'cancan'
 gem 'rack'
 gem 'nokogiri'
 gem 'css3buttons'
+gem 'dotenv'
 
 gem 'sass-rails'
 gem 'coffee-rails'
@@ -58,10 +61,10 @@ group :development, :test do
   gem 'spork', '0.9.0.rc9', :require => false
 end
 
-group :mysql do
+#group :mysql do
   # adapter: mysql2
-  gem 'mysql2', :require => false
-end
+  gem 'mysql2', '~> 0.4.10' #, :require => false
+#end
 
 group :postgres do
   # adapter: postgresql
