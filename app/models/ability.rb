@@ -36,7 +36,7 @@ class Ability
       can :make_admin, User
     else
       can [:read, :update, :destroy], User, :id => user.id
-      can crud, Site, :user_id => user.id
+      can [:read], Site, :user_id => user.id
       can crud, Topic, :site => { :user_id => user.id }
       can crud, Comment, :topic => { :site => { :user_id => user.id } }
     end
